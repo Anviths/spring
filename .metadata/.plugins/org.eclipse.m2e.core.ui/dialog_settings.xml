@@ -48,6 +48,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="spring-container-test"/>
 			<item value="spring-example-two"/>
 			<item value="spring-example-one"/>
 		</list>
