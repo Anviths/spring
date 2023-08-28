@@ -1,0 +1,20 @@
+package com.ty.driver;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+
+import com.ty.Mobile;
+
+public class Driver {
+
+	public static void main(String[] args) {
+   
+		Resource res=new ClassPathResource("xml_config.xml");
+		BeanFactory bf=new XmlBeanFactory(res);
+		Mobile m=(Mobile) bf.getBean("mobile");
+		System.out.println(m.message());
+	}
+
+}
